@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
       - name: Compute next tag
         id: compute_tag
         uses: craig-day/compute-tag@v15
@@ -20,7 +21,9 @@ jobs:
           version_scheme: semantic
           version_type: path
       - name: Package
-        run: zip -r drones-${{steps.compute-tag.outputs.next_tag}}.zip drones
+        env:
+          TAG: ${{steps.compute-tag.outputs.next_tag}}
+        run: zip -r drones-${TAG}.zip drones
       - name: Create Release
         uses: softprops/action-gh-release@v1
         env:
