@@ -23,6 +23,7 @@ jobs:
           github_token: ${{ github.token }}
           version_scheme: semantic
           version_type: patch
+          tag: v1.0.0
       - name: Package
         run: zip -r drones-${{steps.compute_tag.outputs.next_tag}}.zip drones
       - name: Create Release
