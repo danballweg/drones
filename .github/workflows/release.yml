@@ -23,7 +23,7 @@ jobs:
           branch: main
           github_token: ${{ github.token }}
           version_scheme: semantic
-          version_type: patch
+          version_type: minor
           tag: v1.0.0
       - name: Package
         run: zip -r drones-${{steps.compute_tag.outputs.next_tag}}.zip drones
