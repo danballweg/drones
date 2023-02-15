@@ -1,0 +1,6 @@
+{
+    "[xml]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "DotJoshJohnson.xml"
+    }
+}

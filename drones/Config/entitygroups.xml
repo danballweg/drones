@@ -1,13 +1,13 @@
 <configs>
- 	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">	
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">
 		<entity name="BattleDrone" prob="10"/>
 		<entity name="ScoutDrone" prob="10" />
 	</append>
-	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']">	
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']">
 		<entity name="BattleDrone" prob="10"/>
 		<entity name="ScoutDrone" prob="10" />
 	</append>
-	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']">	
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']">
 		<entity name="BattleDrone" prob="5"/>
 		<entity name="ScoutDrone" prob="5" />
 	</append>
@@ -18,8 +18,8 @@
 	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">
 		<entity name="BattleDrone" prob="10" />
 		<entity name="PoliceDrone" prob="10" />
-	</append>	
-	<append xpath="/entitygroups/entitygroup[@name='VultureGroup']">	
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='VultureGroup']">
 		<entity name="MedicalDrone" />
 	</append>
 </configs>
